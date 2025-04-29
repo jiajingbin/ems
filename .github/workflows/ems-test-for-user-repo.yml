@@ -49,10 +49,14 @@ permissions:
   contents: read
 
 env :
-  MQTT_LABEL : "4C8G"
-  EDGE_LABEL : "4C10G"
-  CENTER_LABEL : "4C10G"
-  CLIENT_LABEL : "8C12G"
+  MQTT_LABEL : "ems-mqtt-node"
+  EDGE_LABEL : "ems-edge-node"
+  CENTER_LABEL : "ems-center-node"
+  CLIENT_LABEL : "ems-client-node"
+  # MQTT_LABEL : "4C8G"
+  # EDGE_LABEL : "4C10G"
+  # CENTER_LABEL : "4C10G"
+  # CLIENT_LABEL : "8C12G"
   SCOPE: "repo"
   TARGET: "jbrass/ems"
   EDGE_DNODE_COUNT : ${{ github.event.inputs.edge-dnode-count }}
