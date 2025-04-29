@@ -1,4 +1,4 @@
-name: EMS Test
+name: EMS Test For User Repo
 
 on:
   workflow_dispatch:
@@ -54,7 +54,7 @@ env :
   CENTER_LABEL : "4C10G"
   CLIENT_LABEL : "8C12G"
   SCOPE: "repo"
-  TARGET: "github_account_name/repo_name"
+  TARGET: "jbrass/ems"
   EDGE_DNODE_COUNT : ${{ github.event.inputs.edge-dnode-count }}
   CENTER_DNODE_COUNT : ${{ github.event.inputs.center-dnode-count }}
   HOSTS_DIRNAME: "ip-hostname"
